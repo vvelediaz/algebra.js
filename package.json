@@ -1,8 +1,9 @@
 {
   "name": "@vvelediaz/algebra.js",
-  "version": "0.2.7",
+  "version": "0.2.9",
   "description": "Build, display, and solve algebraic equations.",
   "main": "algebra.js",
+  "types": "algebra.d.ts",
   "scripts": {
     "test": "make lint test"
   },
@@ -12,6 +13,7 @@
   },
   "files": [
     "algebra.js",
+    "algebra.d.ts",
     "src/"
   ],
   "devDependencies": {
@@ -20,6 +22,7 @@
     "istanbul": "^0.4.4",
     "jasmine-node": "^1.14.5",
     "jshint": "^2.8.0",
+    "typescript": "^5.3.3",
     "uglifyjs": "^2.4.10"
   },
   "keywords": [
@@ -35,5 +38,8 @@
   "bugs": {
     "url": "https://github.com/vvelediaz/algebra.js/issues"
   },
-  "homepage": "http://algebra.js.org"
+  "homepage": "http://algebra.js.org",
+  "dependencies": {
+    "@types/jest": "^29.5.12"
+  }
 }
